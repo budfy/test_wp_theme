@@ -1,0 +1,57 @@
+.attention {
+  background-color: var(--color__text);
+  color: var(--color__grey);
+  padding: 12px 20px;
+  font-size: 12px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.24s;
+
+  &__inner {}
+
+  &__accent {
+    position: relative;
+    padding-left: 28px;
+    font-weight: 700;
+    color: var(--color__accent-2);
+
+    &::before {
+      height: 24px;
+      width: 24px;
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      display: block;
+
+    }
+  }
+
+  &__data {
+    margin-left: 32px;
+  }
+
+  &__data-title {}
+
+  &__data-value {}
+
+  &__link {
+    margin-left: 32px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  &__close {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    height: 24px;
+    width: 24px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
